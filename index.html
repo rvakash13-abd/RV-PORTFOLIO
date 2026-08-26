@@ -1247,6 +1247,33 @@
 
 <div class="project-card reveal">
   <div class="project-img" style="width:100%; height:220px; overflow:hidden;">
+    <div class="project-badge">Healthcare</div>
+    <img src="Aasra.png" class="product-img" 
+         style="width:100%; height:100%; object-fit:cover; object-position:center; display:block;">
+  </div>
+
+  <div class="project-body">
+    <div class="project-title">Aasra</div>
+    <div class="project-desc">
+  Aasra is a healthcare support application designed to make essential healthcare services more accessible and convenient for users. It provides a user-friendly platform to manage health-related information, access healthcare resources, and receive necessary assistance through a mobile application. Built with Android and Firebase, the application focuses on secure data management, easy navigation, and reliable access to healthcare support, helping users manage their healthcare needs more efficiently.
+</div>
+
+    <div class="project-tags">
+      <span class="tag">Flutter</span>
+      <span class="tag">Firebase</span>
+      <span class="tag">Firestore</span>
+      <span class="tag">Authentication</span>
+    </div>
+
+    <div class="project-links">
+      <a class="btn-o" href="https://github.com/Aleema07/Aasra" target="_blank">GitHub</a>
+      <button class="btn-op" onclick="openModal('aasra')">Details</button>
+    </div>
+  </div>
+</div>
+
+<div class="project-card reveal">
+  <div class="project-img" style="width:100%; height:220px; overflow:hidden;">
     <div class="project-badge">FinTech</div>
     <img src="AgesCare.png" class="product-img" 
          style="width:100%; height:100%; object-fit:cover; object-position:center; display:block;">
@@ -1315,21 +1342,38 @@
     <div class="achievements-grid">
 
       <!-- UNESCO RECORD -->
-      <div class="achievement-card reveal">
-  <div class="achievement-img" 
-       onclick="openCert('CHESS','UNESCO WORLD RECORD')"
-       style="width:100%; height:220px; overflow:hidden; cursor:pointer;">
-    <img src="Vlsi.jpeg" class="product-img" 
-         style="width:100%; height:100%; object-fit:cover; object-position:center; display:block;">
-  </div>
-  <div class="achievement-body">
-    <div class="achievement-prize prize-gold">WORLD RECORD</div>
-    <div class="achievement-title">UNESCO WORLD RECORD</div>
-    <div class="achievement-event">CHESS</div>
-    <div class="achievement-desc">National level ANRF sponsored seminar — Navigating VLSI: Trends, Challenges and Opportunities.</div>
-    <div class="achievement-meta">📍 RMK College of Engineering &amp; Technology · Jul 2025</div>
-    <button class="view-cert-btn" onclick="openCert('CHESS','UNESCO WORLD RECORD')">View Certificate</button>
-  </div>
+       <div class="achievement-card reveal"> 
+  <div class="achievement-img"  
+       onclick="openCert('chess','🏆 UNICO WORLD RECORDS — Chess')" 
+       style="width:100%; height:220px; overflow:hidden; cursor:pointer;"> 
+    <img src="Chess.png" class="product-img"  
+         style="width:100%; height:100%; object-fit:cover; object-position:center; display:block;"> 
+  </div> 
+
+  <div class="achievement-body"> 
+    <div class="achievement-prize prize-gold">🏆 WORLD RECORD</div> 
+
+    <div class="achievement-title">
+      2000 Rounds of Chess Games in 75 Minutes
+    </div> 
+
+    <div class="achievement-event">
+      UNICO WORLD RECORDS
+    </div> 
+
+    <div class="achievement-desc">
+      Set a World Record as one of 200 participants by playing 2000 rounds of Chess games in 75 minutes.
+    </div> 
+
+    <div class="achievement-meta">
+      📍 The Temple School, Chennai · 3rd Nov 2019
+    </div> 
+
+    <button class="view-cert-btn" 
+            onclick="openCert('chess','🏆 UNICO WORLD RECORDS — Chess')">
+      View Certificate
+    </button> 
+  </div> 
 </div>
 
       <!-- 1st Prize VLSI -->
@@ -1858,6 +1902,29 @@ aegiscare: {
   working: 'Users interact with AegisCare AI through voice or text. The AI analyzes symptoms, provides healthcare guidance, schedules medication reminders, and delivers awareness information. The system also supports emergency SOS functionality and personalized assistance, helping users manage their health more effectively.',
   github: 'https://github.com/rvakash13-abd'
 },
+aasra: {
+  title: 'Aasra',
+  badge: 'Android',
+  desc: 'A healthcare support application designed to provide users with easy access to essential health-related services and information. Aasra aims to make healthcare assistance more accessible through a simple and user-friendly mobile application.',
+  tags: ['Kotlin', 'Firebase', 'Firestore', 'Android'],
+  components: [
+    'Android Smartphone – Runs the Aasra mobile application',
+    'Firebase Authentication – Provides secure user registration and login',
+    'Cloud Firestore – Stores and manages user and application data',
+    'Android UI Components – Provides the interface for users to access different healthcare features',
+    'Mobile Internet Connection – Enables communication between the application and Firebase services'
+  ],
+  software: [
+    'Kotlin – Used to develop the Android application',
+    'Android Studio – Used for application development, testing, and debugging',
+    'Firebase Authentication – Used for secure user authentication',
+    'Cloud Firestore – Used as the cloud database for storing application data',
+    'XML / Android UI – Used to design the application interface'
+  ],
+  working: 'The user registers or logs into the Aasra application and can access the available healthcare-related services through the mobile interface. User information and application data are securely managed using Firebase Authentication and Cloud Firestore. The application provides a simple platform for users to access the required features and information from their Android device.',
+  github: 'https://github.com/Aleema07/Aasra'
+
+},
 jarvis: {
   title: 'JARVIS',
   badge: 'AI Assistant',
@@ -1990,6 +2057,7 @@ document.addEventListener('keydown', e => { if(e.key === 'Escape') closeModal();
 
 <script>
 const certImages = {
+  chess:'chess.png',
   vlsi: 'Vlsi.jpeg',
   garage: 'Garage Innovators.jpeg',
   mini: 'MiniProject.jpeg',
